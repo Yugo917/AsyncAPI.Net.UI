@@ -10,19 +10,19 @@
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Cors" Version="2.2.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-<!--    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.507">-->
-<!--      <PrivateAssets>all</PrivateAssets>-->
-<!--      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>-->
-<!--    </PackageReference>-->
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.507">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
-<!--  <PropertyGroup>-->
-<!--    <CodeAnalysisRuleSet>..\style\StyleCop.ruleset</CodeAnalysisRuleSet>-->
-<!--  </PropertyGroup>-->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\style\StyleCop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
 
-<!--  <ItemGroup>-->
-<!--    <AdditionalFiles Include="..\..\style\StyleCop.json" />-->
-<!--  </ItemGroup>-->
+  <ItemGroup>
+    <AdditionalFiles Include="..\style\StyleCop.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AsyncAPI.Net.UI\AsyncAPI.Net.UI.csproj" />
