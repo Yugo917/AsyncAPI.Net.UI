@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAPI.Net.UI", "AsyncAPI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAPI.Net.UI.Sample", "AsyncAPI.Net.UI.Sample\AsyncAPI.Net.UI.Sample.csproj", "{BFEBB668-5506-4F14-890B-BC07EA81A6C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncApi.Net.UI.Tests", "AsyncApi.Net.UI.Tests\AsyncApi.Net.UI.Tests.csproj", "{0E7F41FC-C744-46BF-BD0E-76A90A7DA4B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{BFEBB668-5506-4F14-890B-BC07EA81A6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFEBB668-5506-4F14-890B-BC07EA81A6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFEBB668-5506-4F14-890B-BC07EA81A6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7F41FC-C744-46BF-BD0E-76A90A7DA4B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7F41FC-C744-46BF-BD0E-76A90A7DA4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7F41FC-C744-46BF-BD0E-76A90A7DA4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7F41FC-C744-46BF-BD0E-76A90A7DA4B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
