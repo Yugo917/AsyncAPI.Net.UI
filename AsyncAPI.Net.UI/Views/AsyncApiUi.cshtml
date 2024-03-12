@@ -1,0 +1,131 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+
+<head>
+    <title>AsyncApi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@@asyncapi/react-component@1.0.0-next.39/styles/default.min.css">
+</head>
+
+<body>
+
+    <script src="https://unpkg.com/@@asyncapi/react-component@1.0.2/browser/standalone/index.js"></script>
+
+   
+
+    <div class="bg-gray-800 p-5">
+
+        <label for="selectAsyncApiDoc" class="block mb-2 text-sm font-medium text-gray-50 dark:text-white">
+            Select your async api documentation :
+        </label>
+
+        <select
+            id="selectAsyncApiDoc"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            onChange="onChange(this)">
+        </select>
+
+        <ul
+            class="pt-5 flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200">
+            <li onclick="onClick('html')" class="mr-2">
+                <a id="htmlTabButton" href="#" aria-current="page" class="inline-block p-2 text-blue-600 bg-gray-100 rounded-t-lg active">Html</a>
+            </li>
+            <li onclick="onClick('json')" class="mr-2">
+                <a id="jsonTabButton" href="#" class="inline-block p-2 rounded-t-lg hover:text-gray-600 hover:bg-gray-50">Json</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="htmlView" class="p-5 hidden">
+        html
+    </div>
+
+    <div id="jsonView" class="p-5">
+        json
+    </div>
+
+     <script>
+        //const asyncApis = { "key1": "val1", "key2": "val2" }
+        const asyncApis = @Html.Raw(ViewData["asyncApiJsons"]); 
+        const tabActiveClass = "inline-block p-2 text-blue-600 bg-gray-100 rounded-t-lg active";
+        const tabInactiveClass = "inline-block p-2 rounded-t-lg hover:text-gray-600 hover:bg-gray-50";
+
+        function initSelect() {            
+            const sel = document.getElementById("selectAsyncApiDoc");
+            for (const [key, value] of Object.entries(asyncApis)) {
+            const opt = document.createElement("option");
+                opt.value = key;
+                opt.text = key;
+                sel.add(opt, null);
+            }
+        }
+
+        function onChange(s) {            
+            refreshView(asyncApis[s.options[s.selectedIndex].innerHTML]);            
+        }
+
+        function onClick(viewTpe) {            
+            selectViewType(viewTpe);            
+        }
+
+        function hide(id) {
+            document.getElementById(id).classList.add("hidden");
+        }
+
+        function show(id) {
+            document.getElementById(id).classList.remove("hidden");
+        }
+
+        function active(id) {
+            document.getElementById(id).className = tabActiveClass;
+        }
+
+        function deactivate(id) {
+            document.getElementById(id).className = tabInactiveClass;
+        }
+
+        function selectViewType(viewTpe)
+        {
+            hide("htmlView");
+            hide("jsonView");
+            show(viewTpe + "View");
+            deactivate("htmlTabButton");
+            deactivate("jsonTabButton");
+            active(viewTpe + "TabButton");
+        }
+
+        function refreshView(json)
+        {
+            const jsonView = document.getElementById("jsonView");
+            jsonView.innerHTML = json;
+                        
+            const htmlView = document.getElementById("htmlView");            
+            AsyncApiStandalone.render({
+                    schema: json,
+                    config: {
+                        show: {
+                            sidebar: true,
+                        }
+                    },
+                }, htmlView);
+        }
+        
+        // INIT
+        initSelect();
+        selectViewType("html");
+        refreshView(asyncApis[Object.keys(asyncApis)[0]]);
+    </script>
+
+
+</body>
+
+</html>

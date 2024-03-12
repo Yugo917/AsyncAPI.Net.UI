@@ -1,0 +1,18 @@
+<RuleSet Name="Logistic Integration Layer CodeStyle" Description="Rules for Logistic Integration Layer code style" ToolsVersion="15.0">
+   <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+     <Rule Id="SA0001" Action="None" /> <!-- XML comment analysis is disabled due to project configuration -->
+     <Rule Id="SA1000" Action="None" /> <!-- The keyword 'new' should be followed by a space. -->
+     <Rule Id="SA1101" Action="None" /> <!-- Prefix local calls with this -->
+     <Rule Id="SA1121" Action="None" /> <!-- Use built-in type alias -->
+     <Rule Id="SA1201" Action="None" /> <!-- A enum should not follow a class | A constructor should not follow a property -->
+     <Rule Id="SA1402" Action="None" /> <!-- File may only contain a single type -->
+     <Rule Id="SA1413" Action="None" /> <!-- Use trailing comma in multi-line initializers -->
+     <Rule Id="SA1600" Action="None" /> <!-- Elements should be documented. -->
+     <Rule Id="SA1623" Action="None" /> <!-- The property's documentation summary text should begin with: 'Gets or sets' -->
+     <Rule Id="SA1633" Action="None" /> <!-- The file header is missing or not located at the top of the file. -->
+     <Rule Id="SA1649" Action="None" /> <!-- File name should match first type name -->     
+     <Rule Id="SA1614" Action="None" /> <!-- Reported if a <param> element exists but is empty (fix by document or removing the element)-->
+     <Rule Id="SA1616" Action="None" /> <!-- Reported if a <returns> element exists but is empty (fix by documenting or removing the element)-->
+     <Rule Id="SA1622" Action="None" /> <!-- Reported if a <typeparam> element exists but is empty (fix by documenting or removing the element)-->
+   </Rules>
+</RuleSet>
