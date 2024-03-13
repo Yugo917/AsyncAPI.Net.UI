@@ -9,7 +9,7 @@
     <Authors>YugoYug's</Authors>
     <Description>A .Net library to generate AsyncAPI documentation by code first, to easily share and maintain your event-driven architecture.</Description>
     <PackageProjectUrl>https://github.com/Yugo917/AsyncAPI.Net.UI</PackageProjectUrl>
-    <PackageLicenseUrl>The MIT License (MIT)</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>AsyncApi Documentation CodeFirst</PackageTags>
     <IsPackable>true</IsPackable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
