@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <CodeAnalysisRuleSet>..\style\StyleCop.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\style\StyleCop.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="..\style\StyleCop.json" />
+    <AdditionalFiles Include="..\..\style\StyleCop.json" />
   </ItemGroup>
 
   <ItemGroup>

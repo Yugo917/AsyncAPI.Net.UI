@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAPI.Net.UI", "AsyncAPI.Net.UI\AsyncAPI.Net.UI.csproj", "{80EC6441-5D75-49D9-B1DD-29F5F69262ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAPI.Net.UI", "src\AsyncAPI.Net.UI\AsyncAPI.Net.UI.csproj", "{80EC6441-5D75-49D9-B1DD-29F5F69262ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAPI.Net.UI.Sample", "AsyncAPI.Net.UI.Sample\AsyncAPI.Net.UI.Sample.csproj", "{BFEBB668-5506-4F14-890B-BC07EA81A6C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAPI.Net.UI.Sample", "src\AsyncAPI.Net.UI.Sample\AsyncAPI.Net.UI.Sample.csproj", "{BFEBB668-5506-4F14-890B-BC07EA81A6C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncApi.Net.UI.Tests", "AsyncApi.Net.UI.Tests\AsyncApi.Net.UI.Tests.csproj", "{0E7F41FC-C744-46BF-BD0E-76A90A7DA4B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncApi.Net.UI.Tests", "tests\AsyncApi.Net.UI.Tests\AsyncApi.Net.UI.Tests.csproj", "{0E7F41FC-C744-46BF-BD0E-76A90A7DA4B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

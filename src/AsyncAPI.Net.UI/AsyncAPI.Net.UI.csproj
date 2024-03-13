@@ -5,6 +5,14 @@
     <LangVersion>latest</LangVersion>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <OutputType>Library</OutputType>
+    <Version>0.0.1-alpha</Version>
+    <Authors>YugoYug's</Authors>
+    <Description>A .Net library to generate AsyncAPI documentation by code first, to easily share and maintain your event-driven architecture.</Description>
+    <PackageProjectUrl>https://github.com/Yugo917/AsyncAPI.Net.UI</PackageProjectUrl>
+    <PackageLicenseUrl>The MIT License (MIT)</PackageLicenseUrl>
+    <PackageTags>AsyncApi Documentation CodeFirst</PackageTags>
+    <IsPackable>true</IsPackable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,11 +29,12 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <CodeAnalysisRuleSet>..\style\StyleCop.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\style\StyleCop.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="..\style\StyleCop.json" />
+    <AdditionalFiles Include="..\..\style\StyleCop.json" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>

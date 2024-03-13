@@ -28,15 +28,16 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <CodeAnalysisRuleSet>..\style\StyleCop.ruleset</CodeAnalysisRuleSet>
+        <CodeAnalysisRuleSet>..\..\style\StyleCop.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
 
     <ItemGroup>
-        <AdditionalFiles Include="..\style\StyleCop.json" />
+        <AdditionalFiles Include="..\..\style\StyleCop.json" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AsyncAPI.Net.UI.Sample\AsyncAPI.Net.UI.Sample.csproj" />
+      <ProjectReference Include="..\..\src\AsyncAPI.Net.UI.Sample\AsyncAPI.Net.UI.Sample.csproj" />
     </ItemGroup>
+
 
 </Project>
