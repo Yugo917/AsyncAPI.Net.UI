@@ -1,6 +1,7 @@
 # Roadmap
 
 # V0.0.1
+- [ ] enhance 🚧 under construction part on readme
 - [ ] github pipline to publish the package (with .nuspec)
 - [ ] add test coverage execution on the ci
 
