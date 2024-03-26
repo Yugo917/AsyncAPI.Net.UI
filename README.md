@@ -52,6 +52,9 @@ A .Net library to generate [AsyncAPI](https://www.asyncapi.com/en) [2.0](https:/
         });
     ```
 
+# 🚦 Roadmap :
+- the project is still in alpha check the [roadmap](./docs/Roadmap.md)
+
 # 🔗 Links :
 - AsyncApi : https://www.asyncapi.com/en
  - AsyncApi Studio : https://www.asyncapi.com/en
