@@ -1,7 +1,7 @@
 # Roadmap
 
 # V0.0.1
-- [ ] github pipline to publish the package
+- [ ] github pipline to publish the package (with .nuspec)
 - [ ] add test coverage execution on the ci
 
 # V0.0.2
